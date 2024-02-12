@@ -1,0 +1,140 @@
+.solutions
+  background-color: var(--dark-color)
+  overflow: hidden
+
+  &__container
+
+  &__title
+    margin-bottom: 62px
+    .word:nth-child(5)      
+      color: var(--ocean-color)
+    @media (max-width: 992px)
+      margin-bottom: 48px
+    @media (max-width: 480px)
+      margin-bottom: 28px
+
+  &__body
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr))
+    @media (max-width: 480px) 
+      grid-template-columns: 1fr
+
+  &__item    
+    height: 100%
+    width: 100%  
+
+.item-solutions
+
+  &__link   
+    position: relative 
+    display: flex
+    flex-direction: column    
+    height: 100%
+    width: 100%
+    padding: 40px
+    border: 1px solid rgba(247, 247, 247, 0.6)
+    background-color: var(--dark-color)
+    transition: transform 0.3s ease, box-shadow 0.3s ease    
+    @media (any-hover: hover)
+      &:hover       
+        z-index: 2 
+        transform: translate(15px, 15px)
+        box-shadow: -15px -15px 14px 2px rgba(0,0,0,0.7)
+        .item-solutions__right
+          span 
+            opacity: 1
+            visibility: visible
+          svg   
+            fill: var(--ocean-color)     
+            transform: rotate(0deg)
+        .item-solutions__left
+          svg
+            fill: var(--ocean-color)
+    @media (max-width: 992px) 
+      padding: 30px
+    @media (max-width: 480px) 
+      padding: 20px
+
+  &__icons
+    flex: 1 1 auto
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 48px
+    @media (max-width: 480px) 
+      margin-bottom: 32px
+
+  &__left
+    svg
+      width: 120px
+      height: 120px
+      fill: var(--white-color)
+      transition: fill 0.3s ease
+      @media (any-hover: none)
+        fill: var(--ocean-color)
+      @media (max-width: 992px) 
+        width: 90px
+        height: 90px
+      @media (max-width: 480px) 
+        width: 40px
+        height: 40px
+
+  &__right
+    display: flex    
+    justify-content: flex-end
+    align-items: center    
+    span
+      font-size: 20px
+      margin-right: 15px
+      opacity: 0
+      visibility: hidden      
+      transition: opacity 0.3s ease, visibility 0.3s ease
+    svg 
+      width: 36px
+      height: 36px
+      fill: var(--white-color)
+      transform: rotate(-45deg)
+      transition: transform 0.3s ease, fill 0.3s ease
+    @media (any-hover: none)
+      span
+        opacity: 1
+        visibility: visible
+      svg
+        transform: rotate(0deg)
+        fill: var(--ocean-color)
+    @media (max-width: 480px)
+      span
+        font-size: 16px
+        margin-right: 10px 
+      svg 
+        width: 24px
+        height: 24px
+
+  &__value
+    display: flex
+    align-items: flex-end
+    font-size: 32px    
+    font-weight: 500 
+    margin-bottom: 10px
+    @media (max-width: 480px)
+      font-size: 20px    
+
+  &__counter
+    font-size: 72px
+    line-height: 85%
+    letter-spacing: -0.56px
+    text-transform: uppercase
+    padding-left: 15px
+    @media (max-width: 992px) 
+      font-size: 62px
+    @media (max-width: 480px) 
+      padding-left: 5px
+      font-size: 40px
+
+  &__descr
+    font-size: 18px    
+    letter-spacing: -0.32px
+    @media (max-width: 480px) 
+      font-size: 14px    
+
+

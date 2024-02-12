@@ -1,0 +1,25 @@
+.events-page
+  background-color: var(--dark-color)
+
+  &__breadcrumbs
+    margin-bottom: 40px
+    @media (max-width: 480px)
+      margin-bottom: 20px
+
+  &__title
+    margin-bottom: 60px
+    span        
+      color: var(--ocean-color) 
+    @media (max-width: 992px)
+      margin-bottom: 48px   
+    @media (max-width: 480px)
+      margin-bottom: 28px
+
+  &__body
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    gap: 26px
+    @media (max-width: 480px) 
+      grid-template-columns: 1fr
+      gap: 20px  
+      

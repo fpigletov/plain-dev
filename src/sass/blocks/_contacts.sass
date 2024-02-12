@@ -1,0 +1,95 @@
+.contacts
+  background-color: var(--dark-color)
+
+  &__breadcrumbs
+    margin-bottom: 40px
+    @media (max-width: 480px)
+      margin-bottom: 20px
+
+  &__title
+    margin-bottom: 60px
+    span        
+      color: var(--ocean-color) 
+    @media (max-width: 992px)
+      margin-bottom: 48px   
+    @media (max-width: 480px)
+      margin-bottom: 28px
+
+  &__locations
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px
+    margin-bottom: 40px
+    @media (max-width: 768px)
+      grid-template-columns: 1fr
+
+  &__location
+    width: 100%
+    height: 100%
+
+  &__address,
+  &__phone
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    line-height: 120%
+    @media (max-width: 480px)
+      font-size: 14px
+    svg
+      width: 30px
+      height: 30px
+      fill: var(--ocean-color)
+      margin-right: 10px
+
+  &__phone
+    padding-left: 5px
+    svg
+      width: 22px
+      height: 22px
+
+  &__map
+    iframe
+      width: 100%
+
+  &__form
+
+.contact-form
+
+  &__tasks
+    margin-bottom: 30px
+    @media (max-width: 480px)      
+      margin-bottom: 20px
+
+  &__body
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 40px
+    row-gap: 20px
+    margin-bottom: 30px
+    @media (max-width: 768px)
+      grid-template-columns: 1fr
+
+  &__label
+    height: 60px  
+    &:last-child
+      height: 120px  
+      grid-column: 1 / 3
+      @media (max-width: 768px)
+        grid-column: 1 / 2
+    @media (max-width: 480px)
+      height: 48px
+      &:last-child
+        height: 90px
+
+  &__confirm
+    margin-bottom: 30px
+
+  &__btn
+    padding: 15px 25px
+    @media (max-width: 480px)  
+      padding: 12px 20px    
+
+
+
+
+

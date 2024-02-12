@@ -1,0 +1,19 @@
+.policy
+  background-color: var(--dark-color)
+
+  &__breadcrumbs
+    margin-bottom: 40px
+    @media (max-width: 480px)
+      margin-bottom: 20px
+
+  &__title
+    margin-bottom: 40px
+    span        
+      color: var(--ocean-color)    
+    @media (max-width: 480px)
+      margin-bottom: 28px
+
+  &__text
+    line-height: 120%
+    &:not(&:last-child)
+      margin-bottom: 10px

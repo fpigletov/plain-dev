@@ -1,0 +1,165 @@
+.benefits
+  background-color: var(--dark-color)
+
+  &__title
+    margin-bottom: 62px
+    .word:nth-child(3)      
+      color: var(--ocean-color)
+    @media (max-width: 992px)
+      margin-bottom: 48px
+    @media (max-width: 480px)
+      margin-bottom: 28px
+
+  &__wrapper
+    display: grid
+    grid-template-columns: 40% 60%
+    align-items: center
+    @media (max-width: 992px) 
+      grid-template-columns: 50% 50% 
+    @media (max-width: 767px) 
+      grid-template-columns: 100%
+
+  &__actions
+    width: 100%
+    padding: 20px
+    @media (max-width: 480px)
+      display: none
+
+  &__slider
+    width: 100%
+    background-color: var(--ocean-color)
+    padding: 15% 12%
+    @media (max-width: 992px)
+      padding: 40px
+    @media (max-width: 480px) 
+      padding: 20px
+
+.actions-benefits
+
+  &__pagination
+    display: flex
+    min-height: 480px
+    @media (max-width: 992px) 
+      min-height: 400px
+    @media (max-width: 480px) 
+      display: none
+
+  &__progress
+    display: flex
+    flex-direction: column
+    margin-right: 16px    
+
+  &__line
+    display: block
+    background-color: rgba(247, 247, 247, 0.4)
+    width: 8px
+    flex: 0 0 100%
+
+  &__bar
+    display: block
+    background-color: var(--white-color)
+    width: 100%
+    height: 0
+    transition: height 0.4s ease
+
+  &__btn
+    color: rgba(247, 247, 247, 0.4)
+    transition: color 0.4s ease 
+    &.is-active
+      color: var(--white-color)
+  
+  &__btn-name
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    font-size: 26px        
+    font-weight: 700
+    line-height: 130%
+    @media (max-width: 992px)
+      font-size: 20px   
+
+  &__btn-descr
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    font-size: 16px
+    font-weight: 400
+    line-height: 130%  
+    @media (max-width: 992px)  
+      font-size: 14px
+      
+.splide__arrows--ltr
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 20px
+
+.splide__arrow
+  svg
+    fill: var(--dark-color)
+
+  &--prev
+    svg
+      transform: rotate(-180deg)
+
+.item-benefits
+
+  &__tab-name 
+    display: block
+    color: rgba(247, 247, 247, 0.8)    
+    text-transform: uppercase
+    line-height: 130%
+    margin-bottom: 30px
+    @media (max-width: 768px) 
+      line-height: 100%
+      margin-bottom: 20px
+    @media (max-width: 480px) 
+      font-size: 14px
+      margin-bottom: 10px
+
+  &__title
+    font-size: 28px
+    font-weight: 700
+    line-height: 130%
+    letter-spacing: -0.32px
+    margin-bottom: 20px
+    @media (max-width: 768px) 
+      font-size: 26px
+      line-height: 120%
+    @media (max-width: 480px) 
+      font-size: 20px
+      margin-bottom: 10px
+
+  &__descr       
+    line-height: 110%
+    margin-bottom: 30px
+    @media (max-width: 480px) 
+      font-size: 14px
+      margin-bottom: 20px
+
+  &__btn   
+    color: var(--ocean-color)
+    background-color: var(--white-color)    
+    padding: 15px 35px
+    @media (any-hover: hover)
+      &:hover
+        color: var(--white-color)    
+
+.splide__pagination
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: space-around
+  flex: 0 0 100%
+
+  li
+    position: relative
+
+    &::after
+      position: absolute
+      content: ''
+      bottom: -30px
+      left: -25px
+      width: 10px
+      height: 18px
+      background-color: var(--dark-color)

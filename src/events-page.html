@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" sizes="48x48" href="resources/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="512x512" href="resources/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="resources/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="resources/css/splide-core.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper" data-barba="wrapper">
+    @@include("html/header.html")
+    <main class="main" data-barba="container" data-barba-namespace="events">
+      <section class="main__events-page events-page">
+        <div class="events-page__container container">
+          <div class="events-page__breadcrumbs breadcrumbs">
+            <a href="index.html" class="breadcrumbs__main">Main</a>
+            <span class="breadcrumbs__devider">/</span>
+            <span class="breadcrumbs__current">Events</span>
+          </div>
+          <h1 class="events-page__title title">Our <span>events</span></h1>
+          <ul class="events-page__body">
+            <li class="events-page__item item-events">
+              <a href="#" class="item-events__link">
+                <div class="item-events__img">
+                  <picture>
+                    <source srcset="img/events/events-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/events/events-1.jpg" alt="Event Image">
+                  </picture>
+                </div>
+                <div class="item-events__content">
+                  <div class="item-events__top">
+                    <span class="item-events__date">18.12.2021</span>
+                    <span class="item-events__tag">#Event</span>
+                  </div>
+                  <p class="item-events__descr">
+                    Plain Logistics helped reduce the delivery shoulder to WallMart chain stores without increasing
+                    overall
+                    logistics costs
+                  </p>
+                  <span class="item-events__btn btn">Read More</span>
+                </div>
+              </a>
+            </li>
+            <li class="events-page__item item-events">
+              <a href="#" class="item-events__link">
+                <div class="item-events__img">
+                  <picture>
+                    <source srcset="img/events/events-2.webp" type="image/webp">
+                    <img loading="lazy" src="img/events/events-2.jpg" alt="Event Image">
+                  </picture>
+                </div>
+                <div class="item-events__content">
+                  <div class="item-events__top">
+                    <span class="item-events__date">03.02.2022</span>
+                    <span class="item-events__tag">#News</span>
+                  </div>
+                  <p class="item-events__descr">
+                    How to establish communication between the office and production using digital tools
+                  </p>
+                  <span class="item-events__btn btn">Read More</span>
+                </div>
+              </a>
+            </li>
+            <li class="events-page__item item-events">
+              <a href="#" class="item-events__link">
+                <div class="item-events__img">
+                  <picture>
+                    <source srcset="img/events/events-3.webp" type="image/webp">
+                    <img loading="lazy" src="img/events/events-3.jpg" alt="Event Image">
+                  </picture>
+                </div>
+                <div class="item-events__content">
+                  <div class="item-events__top">
+                    <span class="item-events__date">04.10.2021</span>
+                    <span class="item-events__tag">#Event</span>
+                  </div>
+                  <p class="item-events__descr">
+                    Eric Smith: retailers need to quickly adapt to changes
+                  </p>
+                  <span class="item-events__btn btn">Read More</span>
+                </div>
+              </a>
+            </li>
+            <li class="events-page__item item-events">
+              <a href="#" class="item-events__link">
+                <div class="item-events__img">
+                  <picture>
+                    <source srcset="img/events/events-4.webp" type="image/webp">
+                    <img loading="lazy" src="img/events/events-4.jpg" alt="Event Image">
+                  </picture>
+                </div>
+                <div class="item-events__content">
+                  <div class="item-events__top">
+                    <span class="item-events__date">23.05.2022</span>
+                    <span class="item-events__tag">#Article</span>
+                  </div>
+                  <p class="item-events__descr">
+                    Trade turnover growth by 80% in five years: how does digital transformation help not only “maintain
+                    the
+                    market”, but
+                    also increase profits?
+                  </p>
+                  <span class="item-events__btn btn">Read More</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    @@include("html/footer.html")
+  </div>
+  @@include("html/overlay.html")
+  @@include("html/modal.html")
+  @@include("html/mouse.html")
+
+  <script src="js/vendors/splide.min.js"></script>
+  <script src="js/vendors/gsap.min.js"></script>
+  <script src="js/vendors/ScrollSmoother.min.js"></script>
+  <script src="js/vendors/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

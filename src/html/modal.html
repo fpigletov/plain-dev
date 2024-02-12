@@ -1,0 +1,32 @@
+<div class="modal">
+  <button type="button" class="modal__close" aria-label="Close Modal Window">
+    <svg>
+      <use xlink:href="img/sprites/sprite.svg#close"></use>
+    </svg>
+  </button>
+  <div class="modal__body">
+    <form action="#" method="POST" class="modal__form modal-form">
+      <h2 class="modal-form__title title">Do you have <span>questions?</span></h2>
+      <p class="modal-form__subtitle text">Leave your number and we will call you back in 30 minutes</p>
+      <div class="modal-form__content">
+        <label class="modal-form__item form-label">
+          <input class="modal-form__input form-input" name="Name" placeholder="Name" type="text" autocomplete="off">
+        </label>
+        <label class="modal-form__item form-label">
+          <input class="modal-form__input form-input" name="Phone" placeholder="Phone number" type="tel"
+            autocomplete="off">
+        </label>
+        <label class="modal-form__item form-label">
+          <input class="modal-form__input form-input" name="Email" placeholder="Email" type="email" autocomplete="off">
+        </label>
+        <label class="modal-form__item form-label">
+          <input type="checkbox" name="policy" class="modal-form__checkbox checkbox">
+          <span class="modal-form__checkbox-tag checkbox-tag">
+            I agree with <a target="_blank" href="policy.html" class="modal-form__policy link-hover">Privacy Policy</a>
+          </span>
+        </label>
+      </div>
+      <button type="submit" class="modal-form__btn btn">Request a call</button>
+    </form>
+  </div>
+</div>

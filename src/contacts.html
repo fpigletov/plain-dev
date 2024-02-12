@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" sizes="48x48" href="resources/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="512x512" href="resources/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="resources/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="resources/css/splide-core.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper" data-barba="wrapper">
+    @@include("html/header.html")
+    <main class="main" data-barba="container" data-barba-namespace="contacts">
+      <section class="main__contacts contacts">
+        <div class="contacts__container container">
+          <div class="contacts__breadcrumbs breadcrumbs">
+            <a href="index.html" class="breadcrumbs__main">Main</a>
+            <span class="breadcrumbs__devider">/</span>
+            <span class="breadcrumbs__current">Contacts</span>
+          </div>
+          <h1 class="contacts__title title">Our <span>contacts</span></h1>
+          <div class="contacts__locations">
+            <div class="contacts__location">
+              <div class="contacts__address">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#location"></use>
+                </svg>
+                <span>3302 32nd St, San Diego, CA 92104, US</span>
+              </div>
+              <a href="tel:16197590637" class="contacts__phone">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#phone"></use>
+                </svg>
+                <span>+1-61-975-90637</span>
+              </a>
+              <div class="contacts__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.99042737029!2d-117.12788332285304!3d32.73944487367932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95461edf38e07%3A0x323c8decddf39bfc!2s3302%2032nd%20St%2C%20San%20Diego%2C%20CA%2092104%2C%20USA!5e0!3m2!1sen!2s!4v1707640209135!5m2!1sen!2s"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+            <div class="contacts__location">
+              <div class="contacts__address">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#location"></use>
+                </svg>
+                <span>7565 Melrose Ave, Los Angeles, CA 90046, US</span>
+              </div>
+              <a href="tel:13234244504" class="contacts__phone">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#phone"></use>
+                </svg>
+                <span>+1-32-342-44504</span>
+              </a>
+              <div class="contacts__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.4377772121165!2d-118.35750152281926!3d34.083923973145176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bed3ab38354f%3A0x4d91c2a18f6b10f5!2s7565%20Melrose%20Ave%2C%20Los%20Angeles%2C%20CA%2090046%2C%20USA!5e0!3m2!1sen!2s!4v1707640426580!5m2!1sen!2s"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <form action="#" method="POST" class="contacts__form contact-form">
+            <div class="contact-form__tasks tasks">
+              <span class="tasks__caption">Choose one or more tasks please</span>
+              <div class="tasks__body">
+                <label class="tasks__label">
+                  <input type="checkbox" name="warehouse" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Warehouse</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="e-commerce" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>E-commerce</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="technologies" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Technologies</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="equipments" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Equipments</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="consulting" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Consulting</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="marketing" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Marketing</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="staff" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Staff</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="storage" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Storage</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="suppliers" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Suppliers</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <label class="tasks__label">
+                  <input type="checkbox" name="other" class="tasks__checkbox">
+                  <span class="tasks__tag">
+                    <span>Other</span>
+                    <span class="tasks__icon">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="contact-form__body">
+              <label class="contact-form__label form-label">
+                <input name="Fullname" placeholder="Fullname*" autocomplete="off" type="text"
+                  class="contact-form__input form-input">
+              </label>
+              <label class="contact-form__label form-label">
+                <input name="Company" placeholder="Company" autocomplete="off" type="text"
+                  class="contact-form__input form-input">
+              </label>
+              <label class="contact-form__label form-label">
+                <input name="Phone" placeholder="Phone Number*" type="tel" autocomplete="off"
+                  class="contact-form__input form-input">
+              </label>
+              <label class="contact-form__label form-label">
+                <input name="Email" placeholder="Email*" type="email" autocomplete="off"
+                  class="contact-form__input form-input">
+              </label>
+              <label class="contact-form__label">
+                <textarea class="contact-form__textarea form-textarea" name="Textarea" autocomplete="off"
+                  placeholder="Your question"></textarea>
+              </label>
+            </div>
+            <div class="contact-form__confirm confirm-form">
+              <label class="confirm-form__label">
+                <input type="checkbox" class="confirm-form__checkbox checkbox">
+                <span class="confirm-form__checkbox-tag checkbox-tag">
+                  I agree with <a target="_blank" href="policy.html" class="confirm-form__policy link-hover">Privacy
+                    Policy</a>
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="contact-form__btn btn">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    @@include("html/footer.html")
+  </div>
+  @@include("html/overlay.html")
+  @@include("html/modal.html")
+  @@include("html/mouse.html")
+
+  <script src="js/vendors/splide.min.js"></script>
+  <script src="js/vendors/gsap.min.js"></script>
+  <script src="js/vendors/ScrollSmoother.min.js"></script>
+  <script src="js/vendors/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
